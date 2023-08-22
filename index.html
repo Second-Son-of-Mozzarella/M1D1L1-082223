@@ -14,7 +14,7 @@
     <!--Google Fonts-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-        </style>
+    </style>
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="client.css">
@@ -22,6 +22,54 @@
     <!--Bootswatch CSS-->
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><i class="far fa-compass"></i> Northwind</a> <button class="navbar-toggler"
+        type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-tag"></i>
+                    Products
+                </a>
+                <div class="dropdown-menu" aria-labelledby="productDropdown">
+                    <a class="dropdown-item" href="#"> <i class="fas fa-th-large"></i> Browse Categories</a>
+                    <a class="dropdown-item" href="#"> <i class="fas fa-search-plus"></i> Product Search</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"> <i class="fas fa-dollar-sign"></i> Current Discounts</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-friends"></i>
+                    Customers
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="customerDropdown">
+                    <a class="dropdown-item" href="#"><i class="fas fa-user-circle"></i> Account</a>
+                    <a class="dropdown-item" href="#"> <i class="fas fa-user-plus"></i> Regester</a>
+                    <a class="dropdown-item" href="#"> <i class="fas fa-sign-in-alt"></i> Sign-In</a>
+                </div>
+            </li>
+
+
+        </ul>
+        <form class="form-inline ml-auto d-none d-md-block">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Products" aria-label="Search">
+            <button class="btn btn-danger my-2 my-sm-0" type="submit"><i class="fas fa-search"></i><span
+                    class="sr-only">Search</span></button>
+        </form>
+    </div>
+
+</nav>
 
 <body>
     <!-- Bootstrap JS -->
@@ -32,35 +80,18 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"><i class="far fa-compass"></i> Northwind</a>        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Products
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="productDropdown">
-                        <a class="dropdown-item" href="#">Browse Categories</a>
-                        <a class="dropdown-item" href="#">Product Search</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Current Discounts</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline ml-auto d-none d-md-block">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search Products" aria-label="Search">
-                <button class="btn btn-danger my-2 my-sm-0" type="submit"><i class="fas fa-search"></i><span class="sr-only">Search</span></button>            </form>
-        </div>
 
-    </nav>
-    <div class="container">
-        Hello World!
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4">Northwind</h1>
+            <p class="lead">We have the best prices and selection of high quality food & beverages on the planet! Check
+                out our featured discounts below.</p>
+
+            <hr class="my-4">
+            <p>For spectacular international cuisine, look no further</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Order Now <i
+                    class="fas fa-angle-double-right"></i></a>
+        </div>
     </div>
 
 </body>
